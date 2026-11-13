@@ -1,6 +1,10 @@
 # Change these first
 owner: ameilius # Your GitHub organization or username, where this repository lives
 repo: status # The name of this repository
+user-agent: ameilius
+
+secrets:
+  - CONTROL_PLANE_URL
 
 sites:
   - name: TheHippo
@@ -21,21 +25,41 @@ sites:
     url: https://exploresylva.com
   - name: Pawsitive Care
     url: https://pawsitivecarepetservs.com
-  - name: Hestia Panel
-    url: https://panel.thehippo.co:8083
+  - name: Control Plane
+    slug: control-plane
+    url: $CONTROL_PLANE_URL
+    icon: https://raw.githubusercontent.com/ameilius/status/master/assets/hippoco-logo.png
 
 assignees:
   - ameilius
 
 status-website:
-  # Custom domain for the status page
+  # Custom domain; omit baseUrl so history links are /history/<slug>, not //history/<slug>
   cname: status.thehippo.co
-  baseUrl: /
   name: TheHippo Status
+  logoUrl: https://status.thehippo.co/hippoco-logo.png
+  favicon: https://status.thehippo.co/hippoco-logo.png
   introTitle: "**TheHippo Status**"
   introMessage: Live status for TheHippo sites. Checks run every 5 minutes from GitHub Actions, independently of the VPS.
   navbar:
     - title: Status
       href: /
+    - title: TheHippo
+      href: https://thehippo.co
     - title: GitHub
       href: https://github.com/$OWNER/$REPO
+  links:
+    - rel: stylesheet
+      href: /thehippo-theme.css
+  scripts:
+    - src: /theme-toggle.js
+  customHeadHtml: |
+    <meta name="theme-color" content="#03040b">
+    <script>
+    (function(){try{var t=localStorage.getItem("thehippo-theme");if(t!=="light"&&t!=="dark"){t=(window.matchMedia&&window.matchMedia("(prefers-color-scheme: light)").matches)?"light":"dark";}document.documentElement.setAttribute("data-theme",t);document.documentElement.style.colorScheme=t;}catch(e){document.documentElement.setAttribute("data-theme","dark");}})();
+    </script>
+  metaTags:
+    - name: color-scheme
+      content: "dark light"
+    - name: theme-color
+      content: "#03040b"

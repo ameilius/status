@@ -162,10 +162,10 @@
     "dailyMinutesDown": {}
   },
   {
-    "name": "Hestia Panel",
-    "url": "https://panel.thehippo.co:8083",
-    "icon": "https://icons.duckduckgo.com/ip3/panel.thehippo.co.ico",
-    "slug": "hestia-panel",
+    "name": "Control Plane",
+    "url": "$CONTROL_PLANE_URL",
+    "icon": "https://raw.githubusercontent.com/ameilius/status/master/assets/hippoco-logo.png",
+    "slug": "control-plane",
     "status": "up",
     "uptime": "100.00%",
     "uptimeDay": "100.00%",
