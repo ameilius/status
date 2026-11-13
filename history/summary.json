@@ -167,18 +167,16 @@
     "icon": "https://raw.githubusercontent.com/ameilius/status/master/assets/hippoco-logo.png",
     "slug": "control-plane",
     "status": "up",
-    "uptime": "81.85%",
-    "uptimeDay": "81.85%",
-    "uptimeWeek": "81.85%",
-    "uptimeMonth": "81.85%",
-    "uptimeYear": "81.85%",
+    "uptime": "100.00%",
+    "uptimeDay": "100.00%",
+    "uptimeWeek": "100.00%",
+    "uptimeMonth": "100.00%",
+    "uptimeYear": "100.00%",
     "time": 1224,
     "timeDay": 1224,
     "timeWeek": 1224,
     "timeMonth": 1224,
     "timeYear": 1224,
-    "dailyMinutesDown": {
-      "2026-11-13": 2
-    }
+    "dailyMinutesDown": {}
   }
 ]
