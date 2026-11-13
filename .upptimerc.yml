@@ -7,7 +7,8 @@ secrets:
   - CONTROL_PLANE_URL
 
 sites:
-  - name: TheHippo
+  - name: TheHippoCo
+    slug: the-hippo
     url: https://thehippo.co
   - name: Cigar Nexus
     url: https://cigarnexus.app
@@ -36,15 +37,15 @@ assignees:
 status-website:
   # Custom domain; omit baseUrl so history links are /history/<slug>, not //history/<slug>
   cname: status.thehippo.co
-  name: TheHippo Status
+  name: TheHippoCo Status
   logoUrl: https://status.thehippo.co/hippoco-logo.png
   favicon: https://status.thehippo.co/hippoco-logo.png
-  introTitle: "**TheHippo Status**"
-  introMessage: Live status for TheHippo sites. Checks run every 5 minutes from GitHub Actions, independently of the VPS.
+  hideNavTitle: true
+  introMessage: The pulse of TheHippoCo.
   navbar:
     - title: Status
       href: /
-    - title: TheHippo
+    - title: TheHippoCo
       href: https://thehippo.co
     - title: GitHub
       href: https://github.com/$OWNER/$REPO
