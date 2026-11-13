@@ -29,6 +29,20 @@ With [Upptime](https://upptime.js.org), you can get your own unlimited and free 
 
 <!--end: status pages-->
 
+## TheHippoCo sites
+
+Short descriptions of the public sites on [TheHippoCo Status](https://status.thehippo.co), written from each site’s own homepage. One additional internal endpoint is monitored and is not listed here.
+
+- [TheHippoCo](https://thehippo.co) — TheHippoCo, also presented as Hippo Co, is the brand homepage at thehippo.co — a simple, logo-led landing page. Status history: [the-hippo](https://status.thehippo.co/history/the-hippo).
+- [Cigar Nexus](https://cigarnexus.app) — An interactive map of the premium cigar industry, showing ownership, factories, and relationships across Nicaragua, the Dominican Republic, Honduras, and Costa Rica, plus a directory of brands, factories, people, and companies. Status history: [cigar-nexus](https://status.thehippo.co/history/cigar-nexus).
+- [Rupture Report](https://rupturereport.com) — An NFL ACL and Achilles tear tracker with surface, game context, and recovery status for the 2026 season. Status history: [rupture-report](https://status.thehippo.co/history/rupture-report).
+- [Mr JW Bentley](https://mrjwbentley.com) — The professional site of James W. Bentley, a Director of Support and customer-success leader based in Sylva, North Carolina, covering SaaS support leadership and a 25+ year background in tech, IT, and digital marketing. Status history: [mr-jw-bentley](https://status.thehippo.co/history/mr-jw-bentley).
+- [Bentley Mail](https://bentleymail.site) — A premium email service, described on its own site as email with elegance and style. Status history: [bentley-mail](https://status.thehippo.co/history/bentley-mail).
+- [Ameilius](https://ameilius.com) — A personal homepage and link hub — “It's been a long time…” — with links to X, SoundCloud, TradingView, and projects including Cigar Nexus. Status history: [ameilius](https://status.thehippo.co/history/ameilius).
+- [Baincrest](https://baincrest.com) — A homepage built around the line “Success is a decision,” with links to X, Discord, TradingView, and Kraken Pro, including a prompt to track markets on TradingView. Status history: [baincrest](https://status.thehippo.co/history/baincrest).
+- [Explore Sylva](https://exploresylva.com) — A web design and digital marketing studio in Sylva, North Carolina, serving local businesses in Western North Carolina with mobile-first websites and marketing meant to capture the spirit of the Blue Ridge Mountains. Status history: [explore-sylva](https://status.thehippo.co/history/explore-sylva).
+- [Pawsitive Care](https://pawsitivecarepetservs.com) — A locally owned pet-sitting service in Haywood and Jackson Counties, Western North Carolina, offering drop-in visits, overnight stays, adventure trail hikes, pet taxi rides, and related in-home care. Status history: [pawsitive-care](https://status.thehippo.co/history/pawsitive-care).
+
 [**Visit our status website →**](https://status.thehippo.co)
 
 ## 📄 License

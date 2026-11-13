@@ -267,9 +267,15 @@ html[data-theme="dark"] article.graph.link {
   text-shadow: 0 1px 1px rgba(3, 4, 11, 0.7), 0 0 14px var(--card-background-color);
 }
 
-.live-status article.graph > *,
-article.graph.link > * {
+.live-status article.graph > *:not(h4),
+article.graph.link > *:not(h4) {
   position: relative;
+  z-index: 1;
+}
+
+.live-status article.graph h4,
+article.graph.link h4 {
+  position: static;
   z-index: 1;
 }
 
@@ -280,9 +286,36 @@ article {
   transition: transform 0.15s ease, border-color 0.15s ease, box-shadow 0.15s ease;
 }
 
-article.link:hover {
+article.link {
+  cursor: pointer;
+}
+
+article.link:hover,
+article.link:focus-within {
   transform: translateY(-1px);
   border-color: color-mix(in srgb, var(--accent) 45%, var(--card-border-color));
+  box-shadow: var(--shadow), var(--ring);
+}
+
+/* Stretch the existing history <a> across the whole tile so the card is the hit target. */
+article.link h4 a {
+  position: static;
+}
+
+article.link h4 a::after {
+  content: "";
+  position: absolute;
+  inset: 0;
+  z-index: 3;
+  border-radius: inherit;
+}
+
+article.link h4 a:focus {
+  outline: none;
+}
+
+article.link h4 a:focus-visible {
+  outline: none;
 }
 
 article.up,
@@ -361,5 +394,65 @@ img[src*="graphs/"] {
     height: 2.4rem;
     top: 0.15rem !important;
     right: 0 !important;
+  }
+}
+
+/* History-page site blurb + visible backlink (not used on Control Plane) */
+.site-profile {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 0.7rem;
+  margin: 0 0 1.35rem;
+  padding: 0.95rem 1.15rem;
+  max-width: 40rem;
+  border: 1px solid var(--card-border-color);
+  border-radius: 16px;
+  background: var(--card-background-color);
+  box-shadow: var(--shadow);
+}
+
+.site-profile-desc {
+  margin: 0;
+  color: var(--body-text-color);
+  font-size: 1.02rem;
+  line-height: 1.55;
+}
+
+.site-profile-link {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.35rem;
+  color: var(--accent);
+  font-weight: 600;
+  text-decoration: none;
+  border-radius: 999px;
+  padding: 0.35rem 0.8rem;
+  background: var(--accent-soft);
+  border: 1px solid transparent;
+}
+
+.site-profile-link::after {
+  content: "↗";
+  font-weight: 500;
+  font-size: 0.95em;
+}
+
+.site-profile-link:hover {
+  text-decoration: none;
+  border-color: var(--accent);
+}
+
+.site-profile-link:focus-visible {
+  outline: none;
+  box-shadow: var(--ring);
+}
+
+@media (max-width: 640px) {
+  .site-profile {
+    padding: 0.85rem 1rem;
+  }
+  .site-profile-desc {
+    font-size: 0.98rem;
   }
 }

@@ -51,15 +51,17 @@ status-website:
       href: https://github.com/$OWNER/$REPO
   links:
     - rel: stylesheet
-      href: https://status.thehippo.co/thehippo-theme.css?v=4
+      href: https://status.thehippo.co/thehippo-theme.css?v=5
   scripts:
-    - src: https://status.thehippo.co/theme-toggle.js?v=4
+    - src: https://status.thehippo.co/theme-toggle.js?v=5
   customHeadHtml: |
     <meta name="theme-color" content="#03040b">
     <script>
     (function(){try{var t=localStorage.getItem("thehippo-theme");if(t!=="light"&&t!=="dark"){t=(window.matchMedia&&window.matchMedia("(prefers-color-scheme: light)").matches)?"light":"dark";}document.documentElement.setAttribute("data-theme",t);document.documentElement.style.colorScheme=t;}catch(e){document.documentElement.setAttribute("data-theme","dark");}})();
     </script>
   metaTags:
+    - name: description
+      content: "The pulse of TheHippoCo. Live uptime and response times for TheHippoCo sites."
     - name: color-scheme
       content: "dark light"
     - name: theme-color
