@@ -66,3 +66,7 @@ status-website:
       content: "dark light"
     - name: theme-color
       content: "#03040b"
+
+workflowSchedule:
+  responseTime: "0 */3 * * *"
+  graphs: "30 */6 * * *"
