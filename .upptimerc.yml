@@ -50,9 +50,9 @@ status-website:
       href: https://github.com/$OWNER/$REPO
   links:
     - rel: stylesheet
-      href: /thehippo-theme.css
+      href: https://status.thehippo.co/thehippo-theme.css
   scripts:
-    - src: /theme-toggle.js
+    - src: https://status.thehippo.co/theme-toggle.js
   customHeadHtml: |
     <meta name="theme-color" content="#03040b">
     <script>
