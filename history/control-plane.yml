@@ -1,7 +1,7 @@
 url: $CONTROL_PLANE_URL
 status: up
 code: 200
-responseTime: 1927
-lastUpdated: 2026-11-15T00:28:43.354Z
+responseTime: 1365
+lastUpdated: 2026-11-15T10:03:24.912Z
 startTime: 2026-11-13T00:01:17.794Z
 generator: Upptime <https://github.com/upptime/upptime>
